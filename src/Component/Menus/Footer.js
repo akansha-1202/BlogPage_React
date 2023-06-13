@@ -43,6 +43,9 @@ export default function Footer() {
            </div>
           </>
            ) }
+           else {
+            return null; // Add this default return statement
+          }
 })   
         }
         </div>
