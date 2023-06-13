@@ -48,6 +48,7 @@ export default function Blogs() {
         {
           data.map((article, index) => {
            // console.log(count, index);
+
             if(index<count){
             return (
               <div className='category-article' key={index}>
@@ -71,6 +72,8 @@ export default function Blogs() {
             }
             else {
               return null; // Add this default return statement
+            }
+
           })
         }
         <button onClick={() => {setCount(count + 7)}}>Load More</button>
