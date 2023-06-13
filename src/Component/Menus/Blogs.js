@@ -3,7 +3,7 @@ import { Link, useParams } from 'react-router-dom';
 import axios from 'axios';
 
 export default function Blogs() {
-    const [data, setData] = useState();
+    const [data, setData] = useState([]);
     const [count, setCount] = useState(8);
     const [loading, setLoading] = useState(false);
     const params = useParams();

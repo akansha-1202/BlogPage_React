@@ -3,10 +3,10 @@ import {Link, useParams } from 'react-router-dom';
 import axios from 'axios';
 
 export default function TopPosts() {
-    const [data, setData] = useState();//-->data from API
+    const [data, setData] = useState([]);//-->data from API
     const [loading, setLoading] = useState(false);
-    const [count1, setCount1] = useState(1);
-    const [count2, setCount2] = useState(3);
+    const [count1] = useState(1);
+    const [count2] = useState(3);
 
     const params = useParams();
     var titleString = params.category;

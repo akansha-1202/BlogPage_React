@@ -5,7 +5,7 @@ import Avatar from '@mui/material/Avatar';
 import avatar2 from './avatar2.png';
 
 export default function Footer() {
-  const [count, setCount] = useState(3);
+  const [count] = useState(3);
   
   return (
     <div className='boxes'>

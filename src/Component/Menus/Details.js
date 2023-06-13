@@ -30,7 +30,7 @@ const Details = () => {
           </div>
         </div>
 
-        <img className='detail-image' src={article.urlToImage}/>
+        <img className='detail-image' src={article.urlToImage} alt={article.title}/>
         <p className='detail-content'>{article.description}</p>
 
         <div className='avatar'>
