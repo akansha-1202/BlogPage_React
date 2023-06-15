@@ -359,7 +359,7 @@ h4:hover{
 
 @media screen and (max-width: 500px){
     body{
-        margin: 20px;
+        margin: 40px;
     }
     /* NAVBAR */
     .head{
@@ -514,7 +514,7 @@ h4:hover{
     
 /* DETAILS */
 .detail-container{
-    width: 420px;
+    width: 400px;
     /* display: flex;
     flex-direction: column;
     justify-content: center;
@@ -524,6 +524,7 @@ h4:hover{
 .detail-image{
     width: 420px;
     height: 350px;
+    margin-right: 14px;
 }
 .detail-content{
     width: 420px;
