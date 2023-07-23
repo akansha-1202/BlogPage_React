@@ -2,6 +2,8 @@ import React,{useState} from 'react'
 import { NavLink } from 'react-router-dom'
 import {GiHamburgerMenu} from 'react-icons/gi'
 import {RxCross2} from 'react-icons/rx'
+import "../Style/navbar.css"
+
 
 export default function NavBar() {
   const[isMobile,setIsMobile]=useState(false);
