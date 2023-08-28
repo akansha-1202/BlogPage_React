@@ -3,7 +3,7 @@ import { Link, useParams } from 'react-router-dom';
 import axios from 'axios';
 
 export default function Blogs() {
-    const [data, setData] = useState();
+    const [data, setData] = useState([]);
     const [count, setCount] = useState(8);
     const [loading, setLoading] = useState(false);
     const params = useParams();
@@ -22,6 +22,7 @@ export default function Blogs() {
     //            dateString +
     //           '&sortBy=popularity&apiKey=d9ef585657a6408b8094c912d6c5fcee';
     var url = 'https://webblog-by-akansha.onrender.com/' + params.category;
+    
 
 
     // var req = new Request(url);
@@ -70,6 +71,10 @@ export default function Blogs() {
               </div>
             )
             }
+            else {
+              return null; // Add this default return statement
+            }
+
           })
         }
         <button onClick={() => {setCount(count + 7)}}>Load More</button>

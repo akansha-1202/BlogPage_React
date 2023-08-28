@@ -5,8 +5,8 @@ import axios from 'axios';
 export default function TopPosts() {
     const [data, setData] = useState();//-->data from API
     const [loading, setLoading] = useState(false);
-    const [count1, setCount1] = useState(1);
-    const [count2, setCount2] = useState(3);
+    const [count1] = useState(1);
+    const [count2] = useState(3);
 
     const params = useParams();
     var titleString = params.category;
@@ -68,9 +68,9 @@ export default function TopPosts() {
               </>
               )}
 
-              if(index<=count2){
+              else if(index<=count2){
                 return(
-              <div className='article3 ' key={index}>
+              <div className='article3' key={index}>
                 <Link to={`/details/${encodeURIComponent(article.urlToImage)}`} state={article}>
                   <img className='img3' src={article.urlToImage} alt={article.title}/>
                 </Link>
@@ -87,6 +87,10 @@ export default function TopPosts() {
                   </div>
               </div>
                 )}
+
+                else {
+                  return null; // Add this default return statement
+                }
 
           })
         }
