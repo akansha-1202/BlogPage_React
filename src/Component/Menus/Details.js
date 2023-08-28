@@ -18,7 +18,7 @@ const Details = () => {
           <div className="avatar-content">
             <Avatar alt="avatar" src={avatar2} sx={{ width: 70, height: 70 }} />
             <div className="avatar-cont">
-              <p>Akansha Verma</p>
+              <p style={{fontWeight:"bold"}}>Akansha Verma</p>
               <p style={{ fontWeight: "100", color: "gray" }}>
                 {article.publishedAt}
               </p>
@@ -43,7 +43,7 @@ const Details = () => {
           <div className="avatar-content">
             <Avatar alt="avatar" src={avatar2} sx={{ width: 70, height: 70 }} />
             <div className="avatar-cont">
-              <p>WRITTEN BY:</p>
+              {/* <p>WRITTEN BY:</p> */}
               <p>Akansha Verma</p>
               <p style={{ fontWeight: "100", color: "gray" }}>
                 {article.publishedAt}
