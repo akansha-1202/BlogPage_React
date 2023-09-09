@@ -351,6 +351,38 @@ const Home = () => {
               </div>
             </div>
           ))}
+
+
+{Data.filter((item) => {
+            return item.category === "technology" && item.id === 13;
+          }).map((article) => (
+            <div className="topPost">
+              <Link
+                to={`/details/${encodeURIComponent(article.urlToImage)}`}
+                state={article}
+              >
+                <img
+                  className="topPostList-img"
+                  src={article.urlToImage}
+                  alt={article.title}
+                />
+              </Link>
+
+              <div className="blog-content">
+                <Link to={`/details/${article.title}`} state={article}>
+                  <p className="home-title">{article.title}</p>
+                </Link>
+
+                <div className="blog-details">
+                  <p className="category">{article.category}</p>
+                  <p className="published">{article.publishedAt}</p>
+                </div>
+              </div>
+            </div>
+          ))}
+
+
+
         </div>
       </div>
 
